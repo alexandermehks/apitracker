@@ -78,17 +78,3 @@ def search(json_data):
 				change_dict["added_values"].append(value)
 
 	return change_dict
-
-
-
-
-
-
-
-
-
-
-
-
-
-
