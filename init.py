@@ -21,11 +21,11 @@ sample_JSON = {
                 }
             }
         }
-    }
+    },
 }
 
 
 
 if __name__ == "__main__":
-	recursiveSearch.rec_search(sample_JSON)
+	recursiveSearch.search(sample_JSON)
 
