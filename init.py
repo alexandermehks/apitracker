@@ -25,11 +25,7 @@ sample_JSON = {
     "Something": {
     	"Color": "Red"
     }
-
-
 }
-
-
 
 if __name__ == "__main__":
 	recursiveSearch.search(sample_JSON)

@@ -1,6 +1,5 @@
 from imports import compare
 
-
 example_JSON = {
         "glossary": {
                 "title": "example glossary",
@@ -26,7 +25,6 @@ example_JSON = {
         "king": "kung"
     }
 }
-
 
 """
 The search takes an argument of an incoming response from the API you are using.
@@ -61,11 +59,7 @@ def search(json_data):
         else:
             values_removed = False
 
-
-
-
     key_compare = compare.key_compare(latest_response_keys,old_response_keys, keys_removed)
     change_dict = key_compare
-    
 
     return change_dict
