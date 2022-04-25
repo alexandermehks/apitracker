@@ -38,8 +38,6 @@ if __name__ == "__main__":
             ADD ALERT => Email, sms, slack ? 
             """
             print(change)
-        else:
-            print("No changes")
     except:
         pass
 
