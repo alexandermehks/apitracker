@@ -4,7 +4,7 @@ Can be optimized very much, key.keys() generates a dict that can be returned dir
 Idea: instead of iterating over all the keys check the length of the dict to be able to
 catch if a key has been added for a specific json object. 
 
-len(key.keys()) => check for same length != iterate over the specific dict for new keyy
+len(key.keys()) => check for same length != iterate over the specific dict for new key
 """
 def keys(data):
     key_holder = [] 
