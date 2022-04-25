@@ -28,9 +28,19 @@ sample_JSON = {
 }
 
 if __name__ == "__main__":
-    #Test with real request on example json.
-    r = requests.get('https://jsonplaceholder.typicode.com/posts')
-    change = build.do_compare(r.json())
-    print(change)
+    try:
+        #Test with real request on example json.
+        r = requests.get('https://jsonplaceholder.typicode.com/posts')
+        change = build.do_compare(r.json())
+
+        if len(change["removed_keys"]) or len(change["added_keys"]) != 0:
+            """
+            ADD ALERT => Email, sms, slack ? 
+            """
+            print(change)
+        else:
+            print("No changes")
+    except:
+        pass
 
 
