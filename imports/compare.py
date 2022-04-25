@@ -17,8 +17,6 @@ def key_compare(latest_response, old_response, removed):
     return change_dict
 
 
-
-
 #EXAMPLE_JSON ONLY FOR TESTING! WILL BE REMOVED
 example_JSON = {
         "glossary": {
@@ -46,9 +44,6 @@ example_JSON = {
 
 }
 }
-
-
-
 
 """
 The search takes an argument of an incoming response from the API you are using.
@@ -83,5 +78,3 @@ def do_compare(json_data):
     change_dict = key_compare
 
     return change_dict
-
-
