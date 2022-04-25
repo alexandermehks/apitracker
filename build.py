@@ -1,5 +1,5 @@
 import requests
-from imports import build,haschanged 
+from imports import compare,haschanged 
 
 sample_JSON = {
     "glossary": {
@@ -31,7 +31,7 @@ if __name__ == "__main__":
     try:
         #Test with real request on example json.
         r = requests.get('https://jsonplaceholder.typicode.com/posts')
-        change = build.do_compare(r.json())
+        change = compare.do_compare(r.json())
 
         if haschanged.has_changed(change):
             """
@@ -39,6 +39,6 @@ if __name__ == "__main__":
             """
             print(change)
     except:
-        pass
+        print("ERROR")
 
 
