@@ -1,5 +1,6 @@
 from imports import compare,fetch_keys
 
+#EXAMPLE_JSON ONLY FOR TESTING!
 example_JSON = {
         "glossary": {
                 "title": "example glossary",
@@ -30,8 +31,6 @@ example_JSON = {
 The search takes an argument of an incoming response from the API you are using.
 The old response gets stored locally to match against the new one for changes.
 
-TODO:
- *Check for changes in keys or values. 
  """
 def search(json_data):
     change_dict = {}
