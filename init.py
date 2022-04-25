@@ -28,5 +28,9 @@ sample_JSON = {
 }
 
 if __name__ == "__main__":
-    recursiveSearch.search(sample_JSON)
+    #Test with real request on example json.
+    r = requests.get('https://jsonplaceholder.typicode.com/posts')
+    change = recursiveSearch.search(r.json())
+    print(change)
+
 
