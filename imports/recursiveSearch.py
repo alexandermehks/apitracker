@@ -54,10 +54,10 @@ def search(json_data):
     else:
         keys_removed = False
 
-        if len(latest_response_values) < len(old_response_values):
-            values_removed = True
-        else:
-            values_removed = False
+    if len(latest_response_values) < len(old_response_values):
+        values_removed = True
+    else:
+        values_removed = False
 
     key_compare = compare.key_compare(latest_response_keys,old_response_keys, keys_removed)
     change_dict = key_compare
