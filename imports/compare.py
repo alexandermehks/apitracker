@@ -14,5 +14,3 @@ def key_compare(latest_response, old_response, removed):
                 change_dict["added_keys"].append(key)
     
     return change_dict
-
-
