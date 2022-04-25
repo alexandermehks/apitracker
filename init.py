@@ -1,5 +1,5 @@
 import requests
-import recursiveSearch
+from imports import recursiveSearch
 
 sample_JSON = {
     "glossary": {
@@ -22,6 +22,10 @@ sample_JSON = {
             }
         },
     },
+    "Something": {
+    	"Color": "Red"
+    }
+
 
 }
 
