@@ -12,5 +12,4 @@ def key_compare(latest_response, old_response, removed):
         else:
             if key not in old_response:
                 change_dict["added_keys"].append(key)
-    
     return change_dict
