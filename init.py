@@ -4,29 +4,29 @@ from imports import recursiveSearch
 sample_JSON = {
     "glossary": {
         "title": "example glossary",
-		"GlossDiv": {
+        "GlossDiv": {
             "title": "S",
-			"GlossList": {
+            "GlossList": {
                 "GlossEntry": {
                     "ID": "SGML",
-					"SortAs": "SGML",
-					"GlossTerm": "Standard Generalized Markup Language",
-					"Acronym": "SGML",
-					"Abbrev": "ISO 8879:1986",
-					"GlossDef": {
+                    "SortAs": "SGML",
+                    "GlossTerm": "Standard Generalized Markup Language",
+                    "Acronym": "SGML",
+                    "Abbrev": "ISO 8879:1986",
+                    "GlossDef": {
                         "para": "A meta-markup language, used to create markup languages such as DocBook.",
-						"GlossSeeAlso": ["GML", "XML"],
+                        "GlossSeeAlso": ["GML", "XML"],
                     },
-					"GlossSee": "markup"
+                    "GlossSee": "markup"
                 }
             }
         },
     },
     "Something": {
-    	"Color": "Red"
+        "Color": "Red"
     }
 }
 
 if __name__ == "__main__":
-	recursiveSearch.search(sample_JSON)
+    recursiveSearch.search(sample_JSON)
 
