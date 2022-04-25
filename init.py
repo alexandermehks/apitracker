@@ -1,5 +1,5 @@
 import requests
-from imports import recursiveSearch
+from imports import build 
 
 sample_JSON = {
     "glossary": {
@@ -30,7 +30,7 @@ sample_JSON = {
 if __name__ == "__main__":
     #Test with real request on example json.
     r = requests.get('https://jsonplaceholder.typicode.com/posts')
-    change = recursiveSearch.search(r.json())
+    change = build.do_compare(r.json())
     print(change)
 
 

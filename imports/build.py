@@ -32,7 +32,7 @@ The search takes an argument of an incoming response from the API you are using.
 The old response gets stored locally to match against the new one for changes.
 
  """
-def search(json_data):
+def do_compare(json_data):
     change_dict = {}
     change_dict["removed_keys"] = [] 
     change_dict["added_keys"] = []
