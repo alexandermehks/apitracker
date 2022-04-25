@@ -1,5 +1,5 @@
 import requests
-from imports import build 
+from imports import build,haschanged 
 
 sample_JSON = {
     "glossary": {
@@ -33,7 +33,7 @@ if __name__ == "__main__":
         r = requests.get('https://jsonplaceholder.typicode.com/posts')
         change = build.do_compare(r.json())
 
-        if len(change["removed_keys"]) or len(change["added_keys"]) != 0:
+        if haschanged.has_changed(change):
             """
             ADD ALERT => Email, sms, slack ? 
             """
