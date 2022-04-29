@@ -12,5 +12,5 @@ def keys(data):
         for k in key.keys():
             if k not in key_holder:
                 key_holder.append(k)
-
+    print(key_holder)
     return key_holder

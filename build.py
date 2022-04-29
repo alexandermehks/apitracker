@@ -1,44 +1,26 @@
 import requests
-from imports import compare,haschanged 
+import json
+from imports import compare,haschanged, fetch_keys
 
-sample_JSON = {
-    "glossary": {
-        "title": "example glossary",
-        "GlossDiv": {
-            "title": "S",
-            "GlossList": {
-                "GlossEntry": {
-                    "ID": "SGML",
-                    "SortAs": "SGML",
-                    "GlossTerm": "Standard Generalized Markup Language",
-                    "Acronym": "SGML",
-                    "Abbrev": "ISO 8879:1986",
-                    "GlossDef": {
-                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
-                        "GlossSeeAlso": ["GML", "XML"],
-                    },
-                    "GlossSee": "markup"
-                }
-            }
-        },
-    },
-    "Something": {
-        "Color": "Red"
-    }
-}
 
 if __name__ == "__main__":
     try:
         #Test with real request on example json.
         r = requests.get('https://jsonplaceholder.typicode.com/posts')
+        #r = requests.get('https://gorest.co.in/public/v2/posts/100/comments')
+
         change = compare.do_compare(r.json())
 
         if haschanged.has_changed(change):
             """
-            ADD ALERT => Email, sms, slack ? 
+#            ADD ALERT => Email, sms, slack ? 
             """
-            print(change)
+            print(change, "\n")
+            with open("something.json", 'w') as file:
+                file.write(json.dumps(r.json(), indent = 4))
+
     except:
-        print("ERROR")
+        print("Something went wrong")
+
 
 
