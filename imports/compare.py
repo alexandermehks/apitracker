@@ -3,7 +3,7 @@ import json
 import os
 import sys
 
-PATH_JSON = sys.path[0] + "/something.json"
+PATH_JSON = sys.path[0] + "/latestResponse.json"
 
 def key_compare(latest_response, old_response, removed):
     change_dict = {}
@@ -16,7 +16,7 @@ def key_compare(latest_response, old_response, removed):
             for old_key in old_response:
                 if old_key not in latest_response and old_key not in change_dict["removed_keys"]:
                     change_dict["removed_keys"].append(old_key)
-                    
+
         if key not in old_response:
             change_dict["added_keys"].append(key)
     return change_dict
