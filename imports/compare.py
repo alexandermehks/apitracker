@@ -28,9 +28,9 @@ The old response gets stored locally to match against the new one for changes.
 
  """
 def do_compare(json_data):
-    change_dict = {}
-    change_dict["removed_keys"] = [] 
-    change_dict["added_keys"] = []
+    #change_dict = {}
+    #change_dict["removed_keys"] = [] 
+    #change_dict["added_keys"] = []
 
 
     #Latest response from the API. Only looking at the keys. 
@@ -58,4 +58,5 @@ def do_compare(json_data):
     key_compare = compare.key_compare(latest_response_keys,old_response_keys, keys_removed)
     change_dict = key_compare
 
-    return change_dict
+    #return change_dict
+    return key_compare

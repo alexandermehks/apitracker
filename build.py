@@ -1,6 +1,7 @@
 import requests
 import json
 from imports import compare,haschanged, fetch_keys
+from log import do_log
 
 
 if __name__ == "__main__":
@@ -15,9 +16,12 @@ if __name__ == "__main__":
             """
 #            ADD ALERT => Email, sms, slack ? 
             """
-            print(change, "\n")
-            with open("something.json", 'w') as file:
+            do_log(change)
+            with open("latestResponse.json", 'w') as file:
                 file.write(json.dumps(r.json(), indent = 4))
+        else:
+            print("No change in the response")
+            do_log("No change in the response")
 
     except:
         print("Something went wrong")
