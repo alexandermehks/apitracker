@@ -3,8 +3,7 @@ import json
 from imports import compare,haschanged, fetch_keys
 from log import do_log
 
-
-if __name__ == "__main__":
+def run():
     try:
         #Test with real request on example json.
         r = requests.get('https://jsonplaceholder.typicode.com/posts')
@@ -26,5 +25,9 @@ if __name__ == "__main__":
     except:
         print("Something went wrong")
 
+
+
+if __name__ == "__main__":
+   run() 
 
 
