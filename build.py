@@ -2,7 +2,7 @@
 import requests
 import json
 from imports import compare,haschanged, fetch_keys
-from log import do_log
+from logs.log import do_log
 import sys
 
 
@@ -19,14 +19,14 @@ The old response gets stored locally to match against the new one for changes.
 def do_compare(json_data):
     """
     do_compare function, compares the new response with the old response stored in
-    latestResponse.json
+    latestResponse.json. This is the function that runs the check.
 
     :param: Any kind of json data.
     :return: A dict with added and removed keys. In the case the response has not changed
     it returns an empty dict
     
     """
-
+    #This is the relative path to the JSON file to store the latest response.
     PATH_JSON = sys.path[0] + "/latestResponse.json"
 
     #Latest response from the API. Only looking at the keys. 
@@ -38,19 +38,11 @@ def do_compare(json_data):
         old_response_keys = fetch_keys.keys(data)
         file.close()
 
-    #If something has been removed from the response.
-    
-
     changed_keys = compare.key_compare(latest_response_keys,old_response_keys)
 
     with open("latestResponse.json", 'w') as file:
         file.write(json.dumps(r.json(), indent = 4))
-
-    #return change_dict
     return changed_keys 
-
-
-
 
 if __name__ == "__main__":
     """
@@ -58,5 +50,8 @@ if __name__ == "__main__":
     looking for changes. 
     Ret
     """
-    if haschanged.has_changed(do_compare(r.json())):
-
+    compared = do_compare(r.json())
+    if haschanged.has_changed(compared):
+        do_log(compared)
+        #TODO: => Add email, SMS, slack?
+        pass

@@ -1,0 +1,2 @@
+2022-04-30 22:57:47 'int' object is not iterable in /home/am/git/ChangeInResponse/imports/fetch_keys.py ROW:21
+2022-04-30 22:59:54 Something went wrong in /home/am/git/ChangeInResponse/imports/compare.py ROW:34

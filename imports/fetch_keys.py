@@ -1,3 +1,6 @@
+import sys
+sys.path.append("../")
+from logs.log import log_error,get_row
 """
 Can be optimized very much, key.keys() generates a dict that can be returned directly.
 
@@ -7,9 +10,13 @@ catch if a key has been added for a specific json object.
 len(key.keys()) => check for same length != iterate over the specific dict for new key
 """
 def keys(data):
-    key_holder = [] 
-    for key in data:
-        for k in key.keys():
-            if k not in key_holder:
-                key_holder.append(k)
-    return key_holder
+    try:
+        key_holder = [] 
+        for key in data:
+            for k in key.keys():
+                if k not in key_holder:
+                    key_holder.append(k)
+        return key_holder
+    except TypeError as error:
+        log_error(f"{error} in {__file__}", get_row())  
+
