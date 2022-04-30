@@ -6,7 +6,6 @@ import sys
 sys.path.append("../")
 from logs.log import log_error,get_row
 
-
 def key_compare(latest_response, old_response):
     try:
         change_dict = {}
@@ -32,6 +31,3 @@ def key_compare(latest_response, old_response):
 
     except:
         log_error(f"Something went wrong in {__file__}", get_row())  
-
-
-

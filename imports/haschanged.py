@@ -13,9 +13,3 @@ def has_changed(data):
 			return False
 	except TypeError as error:
 		log_error(f"{error} in {__file__}", get_row())	
-
-
-
-
-
-
