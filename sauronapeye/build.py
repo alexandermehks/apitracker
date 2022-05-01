@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import requests
 import json
-from imports import compare,haschanged, fetch_keys
+import compare,haschanged, fetch_keys
 from logs.log import do_log
 import sys
 
@@ -27,7 +27,7 @@ def do_compare(json_data):
     
     """
     #This is the relative path to the JSON file to store the latest response.
-    PATH_JSON = sys.path[0] + "/latestResponse.json"
+    PATH_JSON = "latestResponse.json"
 
     #Latest response from the API. Only looking at the keys. 
     latest_response_keys = fetch_keys.keys(json_data)

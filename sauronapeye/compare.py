@@ -1,4 +1,4 @@
-from imports import fetch_keys
+import fetch_keys
 import json
 import os
 import sys
