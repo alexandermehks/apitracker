@@ -13,11 +13,5 @@ class TestHasChanged(unittest.TestCase):
 					 "added_keys":[]}
 		self.assertFalse(has_changed(test_dict))
 
-
-
-
-
-
-
 if __name__ == "__main__":
 	unittest.main()
