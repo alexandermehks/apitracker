@@ -4,11 +4,12 @@ import json
 import compare,haschanged, fetch_keys
 from logs.log import do_log
 import sys
+import os
 
 
 #Test with real request on example json.
-r = requests.get('https://jsonplaceholder.typicode.com/posts')
-#r = requests.get('https://gorest.co.in/public/v2/posts/100/comments')
+#r = requests.get('https://jsonplaceholder.typicode.com/posts')
+r = requests.get('https://gorest.co.in/public/v2/posts/100/comments')
 
 """
 The search takes an argument of an incoming response from the API you are using.
