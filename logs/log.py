@@ -12,13 +12,13 @@ def do_log(text):
 		file.close()
 	os.chdir(current)
 
-def log_error(text, row):
+def log_error(text, row="no row found"):
 	current = os.getcwd()
 	os.chdir("../logs")
 	time = datetime.now().strftime("%H:%M:%S")
 	date = datetime.now().date()
 	with open("error-log.txt", "a") as file:
-		file.write(f"{date} {time} {text} ROW:{row}\n")
+		file.write(f"{date} {time} {text}\n")
 		file.close()
 	os.chdir(current)
 

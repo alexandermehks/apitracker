@@ -11,5 +11,9 @@ def has_changed(data):
 			return True
 		else:
 			return False
-	except TypeError as error:
-		log_error(f"{error} in {__file__}", get_row())	
+	except Exception as e:
+		log_error(f"Something went wrong in {__file__} || {e}")	
+
+
+
+

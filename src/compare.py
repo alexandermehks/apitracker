@@ -6,7 +6,7 @@ import sys
 sys.path.append("../")
 from logs.log import log_error,get_row
 
-def key_compare(latest_response, old_response):
+def key_compare(latest_response: list, old_response: list):
     try:
         change_dict = {}
         change_dict["removed_keys"] = []
@@ -29,5 +29,10 @@ def key_compare(latest_response, old_response):
                 change_dict["added_keys"].append(key)
         return change_dict
 
-    except:
-        log_error(f"Something went wrong in {__file__}", get_row())  
+    except Exception as e:
+
+        log_error(f"Something went wrong in {__file__} || {e} ")  
+
+
+
+
