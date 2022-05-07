@@ -1,5 +1,5 @@
 import unittest
-from sauronapeye.haschanged import has_changed
+from src.helpers.haschanged import has_changed
 
 class TestHasChanged(unittest.TestCase):
 
