@@ -10,7 +10,7 @@ python3 -m pytest
 ```
 
 ### Endpoints
-***All endpoints should be be included in src-> endpoints.json***
+***All endpoints should be included in src-> endpoints.json***
 
 *No authorization* 
 
