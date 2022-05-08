@@ -12,6 +12,10 @@ len(key.keys()) => check for same length != iterate over the specific dict for n
 def keys(data):
     try:
         key_holder = [] 
+
+        if data == []:
+            return key_holder
+
         for key in data:
             for k in key.keys():
                 if k not in key_holder:

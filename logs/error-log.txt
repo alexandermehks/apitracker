@@ -8,3 +8,26 @@
 2022-05-07 16:30:17 'int' object is not subscriptable in haschanged.py
 2022-05-07 16:31:01 Something went wrong in haschanged.py
 2022-05-07 16:31:26 Something went wrong in haschanged.py || 'int' object is not subscriptable
+2022-05-08 11:34:56 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:37:01 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:37:23 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:42:43 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:42:50 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:43:38 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:44:11 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:45:07 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:45:31 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:45:57 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:46:30 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:57:48 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:58:46 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 11:59:06 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 12:00:45 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 12:01:40 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 12:02:59 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 12:03:05 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 12:03:59 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 12:04:04 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 12:05:57 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 12:10:15 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable
+2022-05-08 12:43:59 Something went wrong in /home/iamalex/fun/apitracker/src/helpers/haschanged.py || 'NoneType' object is not subscriptable

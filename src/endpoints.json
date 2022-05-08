@@ -1,0 +1,12 @@
+[
+{
+    "url":"https://jsonplaceholder.typicode.com/posts",
+    "auth":"none"
+},
+
+{
+    "url": "https://gorest.co.in/public/v2/posts/100/comments",
+    "auth": "none"
+}
+
+]
