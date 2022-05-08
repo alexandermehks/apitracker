@@ -9,12 +9,24 @@ pip3 install -r requirements.txt
 python3 -m pytest
 ```
 
-###Endpoints
-*** All endpoints should be be included in src-> endpoints.json***
+### Endpoints
+***All endpoints should be be included in src-> endpoints.json***
 
+*No authorization* 
 
+```json
+{ 
+ "url": "your_api_endpoint",
+ "auth": "none"
+}
+```
 
-
-
-
-
+*Basic authorization*
+```json
+{ 
+ "url": "your_api_endpoint",
+ "auth": "basic",
+ "username": "your_username",
+ "password": "your_password"
+}
+```
