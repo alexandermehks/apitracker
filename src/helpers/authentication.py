@@ -8,5 +8,14 @@ def authenticate(request: dict):
     if auth_type == "none":
         r = requests.get(url)
         return r.json()
+
+
+    if auth_type == "basic":
+        user = request["username"]
+        password = request["password"]
+        r = requests.get(url, auth=(user, password))
+        print(r.json())
+        return r.json()
+        
     
 
