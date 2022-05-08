@@ -6,9 +6,10 @@ import sys
 sys.path.append("../")
 from logs.log import log_error,get_row
 
-def key_compare(latest_response: list, old_response: list):
+def key_compare(url,latest_response: list, old_response: list):
     try:
         change_dict = {}
+        change_dict["url"] = url
         change_dict["removed_keys"] = []
         change_dict["added_keys"] = []
 

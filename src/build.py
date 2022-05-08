@@ -27,6 +27,9 @@ def do_compare():
         endpoints = json.loads(file.read())
         file.close()
 
+    changes = {}
+    changes["urls"] = []
+
     for a in endpoints:
         striped_url = a["url"].replace("/","")
         PATH_JSON = f"responses/{striped_url}.json"
@@ -48,13 +51,14 @@ def do_compare():
                 old_response_keys = latest_response_keys
                 file.close()
         
-        changed_keys = compare.key_compare(latest_response_keys, old_response_keys)
+        changed_keys = compare.key_compare(a["url"],latest_response_keys, old_response_keys)
+        changes["urls"].append(changed_keys)
 
         with open(PATH_JSON,'w') as file:
             file.write(json.dumps(latest_response, indent = 4))
             file.close()
-
-    return changed_keys
+    print(changes)
+    return changes 
 
 if __name__ == "__main__":
     """
