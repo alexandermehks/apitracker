@@ -57,7 +57,6 @@ def do_compare():
         with open(PATH_JSON,'w') as file:
             file.write(json.dumps(latest_response, indent = 4))
             file.close()
-    print(changes)
     return changes 
 
 if __name__ == "__main__":
@@ -68,6 +67,5 @@ if __name__ == "__main__":
     """
     compared = do_compare()
     if haschanged.has_changed(compared):
-        do_log(compared)
         #TODO: => Add email, SMS, slack?
         pass

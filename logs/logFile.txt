@@ -14,3 +14,5 @@
 2022-05-07 16:33:24 {'removed_keys': [], 'added_keys': ['userId', 'id', 'title', 'body']}
 2022-05-07 16:34:58 {'removed_keys': [], 'added_keys': ['userId', 'id', 'title', 'body']}
 2022-05-07 16:48:04 {'removed_keys': [], 'added_keys': ['userId', 'id', 'title', 'body']}
+2022-05-08 13:34:30 {'url': 'https://jsonplaceholder.typicode.com/posts', 'removed_keys': [], 'added_keys': []}
+2022-05-08 13:34:30 {'url': 'https://gorest.co.in/public/v2/posts', 'removed_keys': [], 'added_keys': []}
