@@ -8,7 +8,7 @@ pip3 install -r requirements.txt
 ### Build
  ```bash
 Windows: python3 build.py 
-Linux:./build.py
+Linux: ./build.py or python3 build.py
 ```
 
 
