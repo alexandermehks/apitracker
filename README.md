@@ -6,10 +6,12 @@ pip3 install -r requirements.txt
 ```
 
 ### Build
- ```bash
+ ```bash 
+cd src
 python3 build.py
 
 # If running on Linux:
+cd src
 python3 build.py or ./build.py
 ```
 
