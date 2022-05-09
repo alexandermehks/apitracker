@@ -8,7 +8,11 @@ pip3 install -r requirements.txt
 ### Build
  ```bash
 python3 build.py
+
+# If running on Linux:
+python3 build.py or ./build.py
 ```
+
 
 
 ### Running tests
